@@ -13,7 +13,6 @@ function themeWindow(window) {
                 "accentcolor": "#49627a",
                 "textcolor": "#000000",
 
-                "button_background_inactive": "#718da3",
                 "button_background_hover": "#718da3",
                 "button_background_active": "#516d83",
 
