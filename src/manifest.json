@@ -1,0 +1,48 @@
+{
+  "description": "Nile Blue Theme For Firefox",
+  "manifest_version": 2,
+  "name": "Nile Blue",
+  "version": "1.0",
+
+  "theme": {
+
+    "colors": {
+        "accentcolor": "#49627a",
+        "textcolor": "#000000",
+
+        "button_background_hover": "#718da3",
+        "button_background_active": "#516d83",
+
+        "icons": "#000000",
+
+        "popup": "#819da3",
+        "popup_text": "#000000",
+        "popup_highlight": "#516d73",
+        "popup_highlight_text": "#00000",
+
+        "tab_text": "#dddddd",
+        "tab_line": "#19324d",
+        "tab_selected": "#19324d",
+        "tab_loading": "#94814c",
+        
+        "toolbar": "#39526d",
+        "toolbar_text": "#000000",  // bookmark_text
+        "toolbar_field": "#213d53",
+        "toolbar_field_focus": "#19324d",
+        "toolbar_field_text": "#91bdc3",
+        "toolbar_field_text_focus": "#91bdc3",
+        "toolbar_field_border": "#213d53",
+        "toolbar_field_border_focus": "#19324d",
+        "toolbar_field_separator": "#39526d",
+        "toolbar_top_separator": "#324b67",
+        "toolbar_vertical_separator": "#354d6a",
+        "toolbar_bottom_separator": "#154f6a"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "nilebluetheme@rty65tt.org",
+      "strict_min_version": "60.0"
+    }
+  }
+}
