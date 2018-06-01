@@ -1,8 +1,14 @@
 {
-  "description": "Nile Blue Theme For Firefox",
-  "manifest_version": 2,
   "name": "Nile Blue",
+  "description": "Nile Blue Theme For Firefox",
+  "homepage_url": "https://github.com/rty65tt/firefox-theme-nileblue",
+  "manifest_version": 2,
   "version": "1.0",
+  "short_name": "nilebluetheme",
+
+  "icons": {
+    "48": "icon.png"
+  },
 
   "theme": {
 
@@ -10,23 +16,27 @@
         "accentcolor": "#49627a",
         "textcolor": "#000000",
 
+        "button_background_inactive": "#718da3",
         "button_background_hover": "#718da3",
         "button_background_active": "#516d83",
 
         "icons": "#000000",
+        //"icons_attention": "red",
 
         "popup": "#819da3",
         "popup_text": "#000000",
         "popup_highlight": "#516d73",
         "popup_highlight_text": "#00000",
 
-        "tab_text": "#dddddd",
+        "tab_text": "#dadada",
         "tab_line": "#19324d",
         "tab_selected": "#19324d",
         "tab_loading": "#94814c",
+
+        "tab_background_separator": "#19324d",
         
         "toolbar": "#39526d",
-        "toolbar_text": "#000000",  // bookmark_text
+        "toolbar_text": "#000000",
         "toolbar_field": "#213d53",
         "toolbar_field_focus": "#19324d",
         "toolbar_field_text": "#91bdc3",
