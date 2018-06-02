@@ -7,3 +7,10 @@
 
 
 ![](https://raw.githubusercontent.com/rty65tt/firefox-theme-nileblue/master/ss2.png)
+
+
+![](https://raw.githubusercontent.com/rty65tt/firefox-theme-nileblue/master/ss3.png)
+
+You can changed colors.
+
+![](https://raw.githubusercontent.com/rty65tt/firefox-theme-nileblue/master/ss4.png)

@@ -1,36 +1,28 @@
-browser.windows.onCreated.addListener(themeWindow);
 
-// Theme all currently open windows
-browser.windows.getAll().then(wins => wins.forEach(themeWindow));
-
-function themeWindow(window) {
-
-  // Check if the window is in private browsing
-  //if (!window.incognito) {
-    browser.theme.update(window.id, {
-
-        "colors": {
+var default_theme =  {
+    "colors": {
                 "accentcolor": "#49627a",
-                "textcolor": "#000000",
 
-                "button_background_hover": "#718da3",
-                "button_background_active": "#516d83",
+                "button_background_hover": "#49627a",
+                "button_background_active": "#19324d",
 
                 "icons": "#000000",
                 //"icons_attention": "red",
 
                 "popup": "#819da3",
                 "popup_text": "#000000",
-                "popup_highlight": "#516d73",
+                "popup_highlight": "#49627a",
                 "popup_highlight_text": "#00000",
 
-                "tab_text": "#dadada",
+                "tab_text": "#A7ABC7",
                 "tab_line": "#19324d",
                 "tab_selected": "#19324d",
                 "tab_loading": "#94814c",
-
-                "tab_background_separator": "#19324d",
                 
+                "tab_background_separator": "#19324d",
+
+                "textcolor": "#25313F",
+
                 "toolbar": "#39526d",
                 "toolbar_text": "#000000",
                 "toolbar_field": "#213d53",
@@ -43,11 +35,27 @@ function themeWindow(window) {
                 "toolbar_top_separator": "#324b67",
                 "toolbar_vertical_separator": "#354d6a",
                 "toolbar_bottom_separator": "#154f6a"
+
             }
-    });
- // }
-  // Reset to the default theme otherwise
-  // else {
-  //   browser.theme.reset(window.id);
-  // }
+    }
+
+browser.windows.onCreated.addListener(themeWindow);
+
+// Theme all currently open windows
+function apllyThemeSettings() {
+    browser.windows.getAll().then(wins => wins.forEach(themeWindow));
 }
+
+function themeWindow(window) {
+    browser.storage.local.get(default_theme, 
+        prefs => {
+            default_theme = Object.assign(default_theme || [], prefs);
+            browser.theme.update(window.id, default_theme);
+    });
+}
+
+browser.storage.onChanged.addListener(ps => {
+    apllyThemeSettings();
+});
+
+apllyThemeSettings();
