@@ -40,6 +40,7 @@ var default_theme =  {
     }
 
 browser.windows.onCreated.addListener(themeWindow);
+browser.theme.onUpdated.addListener(apllyThemeSettings);
 
 // Theme all currently open windows
 function apllyThemeSettings() {
@@ -59,3 +60,4 @@ browser.storage.onChanged.addListener(ps => {
 });
 
 apllyThemeSettings();
+
