@@ -34,7 +34,18 @@ var default_theme =  {
                 "toolbar_field_separator": "#39526d",
                 "toolbar_top_separator": "#324b67",
                 "toolbar_vertical_separator": "#354d6a",
-                "toolbar_bottom_separator": "#154f6a"
+                "toolbar_bottom_separator": "#154f6a",
+
+                "ntp_background": "#1a3344",
+                "ntp_text": "#6a6e71",
+
+
+                "sidebar": "#39546a",
+                "sidebar_text": "#000000",
+                "sidebar_separator": "#000000",
+
+                "sidebar_highlight": "#314D63",
+                "sidebar_highlight_text": "#000000"
 
             }
     }
