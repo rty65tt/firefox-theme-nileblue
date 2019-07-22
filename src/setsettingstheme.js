@@ -3,6 +3,9 @@ var default_theme =  {
     "colors": {
                 "accentcolor": "#49627a",
 
+                "frame": "#283858",
+                "frame_inactive": "#17314A", 
+                
                 "button_background_hover": "#49627a",
                 "button_background_active": "#19324d",
 
