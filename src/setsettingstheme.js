@@ -2,8 +2,9 @@
 var default_theme =  {
     "colors": {
 
-                "frame": "#49627a",
-                "frame_inactive": "#17314A", 
+                //"frame": "#49627a",
+                "frame": "#39526D",
+                "frame_inactive": "#39526D", 
                 
                 "icons": "#000000",
                 "icons_attention": "#000000",
@@ -18,7 +19,7 @@ var default_theme =  {
                 "popup_highlight_text": "#00000",
 
                 "tab_text": "#A7ABC7",
-                "tab_background_text": "#25313F",
+                "tab_background_text": "#000000",
                 "tab_line": "#19324d",
                 "tab_selected": "#19324d",
                 "tab_loading": "#94814c",
