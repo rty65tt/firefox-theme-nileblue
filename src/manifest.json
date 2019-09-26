@@ -3,23 +3,36 @@
   "description": "Nile Blue Theme For Firefox + You can changed colors",
   "homepage_url": "https://github.com/rty65tt/firefox-theme-nileblue",
   "manifest_version": 2,
-  "version": "1.8",
+  "version": "1.9",
   "short_name": "nilebluetheme",
 
   "icons": {
     "48": "icon.png"
   },
+  
   "permissions": ["theme", "storage"],
+  
   "background": {
     "scripts": ["setsettingstheme.js"]
-},
+  },
+  
   "options_ui": {
     "page": "options/index.html"
   },
+  
   "applications": {
     "gecko": {
       "id": "nilebluetheme@rty65tt.org",
       "strict_min_version": "60.0"
     }
-  }
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["scroll.css"],
+      "match_about_blank": true,
+      "all_frames": true
+    }
+  ]
 }
